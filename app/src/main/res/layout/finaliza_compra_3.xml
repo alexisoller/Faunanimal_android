@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:focusableInTouchMode="true"
+    >
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="0.00"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/direccionsinpuntos"
+            android:id="@+id/tvdireccion_fac1_progressbar"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/enviopago"
+            android:layout_toStartOf="@+id/enviopago"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/enviopago"
+            android:id="@+id/enviopago"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/confirmar"
+            android:id="@+id/tvconfirmar"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/enviopago"
+            android:layout_toEndOf="@+id/enviopago"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        style="@style/CustomProgressBar"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/revisarpedido"
+        android:id="@+id/tvtitulo_revisarpedido"
+        android:background="@drawable/boton_redondeado"
+        android:textColor="#ffffff"
+        android:paddingLeft="30dp"
+        android:drawableLeft="@drawable/check"
+        android:gravity="center_vertical|center_horizontal"
+        android:textStyle="bold"
+        android:layout_below="@+id/progressBar"
+        android:layout_alignLeft="@+id/progressBar"
+        android:layout_alignStart="@+id/progressBar"
+        android:layout_marginTop="37dp"
+        android:layout_alignRight="@+id/progressBar"
+        android:layout_alignEnd="@+id/progressBar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <com.example.devomac02.faunanimal_android.NonScrollListView
+        android:id="@+id/lv_nonscroll_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+    </com.example.devomac02.faunanimal_android.NonScrollListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total : 145,20 €"
+        android:id="@+id/tvtotal"
+        android:layout_below="@+id/lvcarritofinal"
+        android:layout_alignRight="@+id/lvcarritofinal"
+        android:layout_alignEnd="@+id/lvcarritofinal"
+        android:layout_gravity="right"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/comentarios"
+        android:id="@+id/tvcomentarios"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/etcomentarios"
+        android:layout_alignStart="@+id/etcomentarios"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etcomentarios"
+        android:maxLines="20"
+        android:lines="3"
+        android:layout_below="@+id/tvcomentarios"
+        android:layout_alignLeft="@+id/tvtitulo_revisarpedido"
+        android:layout_alignStart="@+id/tvtitulo_revisarpedido"
+        android:layout_alignRight="@+id/tvtitulo_revisarpedido"
+        android:layout_alignEnd="@+id/tvtitulo_revisarpedido" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/tvverterminosycondicionesypoliticadeprivacidad"
+        android:id="@+id/tvverterminosycondicionesypoliticadeprivacidad"
+        android:layout_below="@+id/etpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.00"
+        android:gravity="center" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heleido"
+        android:id="@+id/chheleido"
+        android:layout_below="@+id/etcomentarios"
+        android:layout_margin="10dp"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info"
+        android:id="@+id/tvinfo"
+        android:enabled="true"
+        android:layout_below="@+id/tbinfo"
+        android:layout_alignLeft="@+id/etpassword"
+        android:layout_alignStart="@+id/etpassword"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.00"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="@string/siguiente"
+        android:id="@+id/btnsiguiente"
+        android:background="@drawable/boton_redondeado"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:paddingRight="30dp"
+        android:layout_below="@+id/chheleido"
+        android:layout_alignLeft="@+id/chheleido"
+        android:layout_alignStart="@+id/chheleido"
+        android:layout_alignRight="@+id/etcomentarios"
+        android:layout_alignEnd="@+id/etcomentarios"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center" />
+
+</LinearLayout>
+</ScrollView>

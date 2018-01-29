@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/negro">
+            <android.support.v4.view.ViewPager
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/slider"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/negro" />
+            <me.relex.circleindicator.CircleIndicator
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:id="@+id/indicator"
+                android:layout_above="@+id/tvenviogratis"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="false" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/enviogratis"
+                android:id="@+id/tvenviogratis"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:background="@color/gris"
+                android:layout_below="@+id/slider"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="21dp" />
+
+            <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/laypecesreptiles"
+        android:layout_below="@+id/tvenviogratis">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/imgbutpeces"
+            android:background="@drawable/peces"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/peces"
+            android:layout_alignRight="@+id/imgbutpajaros"
+            android:layout_alignEnd="@+id/imgbutpajaros" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/imgbutreptiles"
+            android:background="@drawable/camaleon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/imgbutroedores"
+            android:layout_alignStart="@+id/imgbutroedores"
+            android:contentDescription="@string/reptiles"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/laypajarosroedores"
+        android:layout_below="@+id/laypecesreptiles">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/imgbutpajaros"
+            android:background="@drawable/pajaros"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/pajaros"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbutroedores"
+            android:background="@drawable/roedores"
+            android:contentDescription="@string/roedores"
+            android:layout_alignLeft="@+id/imgbutperros"
+            android:layout_alignStart="@+id/imgbutperros" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/laygatosperros"
+        android:layout_below="@+id/laypajarosroedores">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/imgbutgatos"
+            android:background="@drawable/gatos"
+            android:layout_below="@+id/imgbutpajaros"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/gatos"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbutperros"
+            android:background="@drawable/perros"
+            android:layout_alignTop="@+id/imgbutgatos"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/perros"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+</ScrollView>

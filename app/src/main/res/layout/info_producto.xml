@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFF">
+        <TextView
+            android:id="@+id/tvinfoproducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:text="titulo"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_margin="5dp" />
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+            <android.support.v4.view.ViewPager
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/slider"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white" />
+            <me.relex.circleindicator.CircleIndicator
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:id="@+id/indicator"
+                app:ci_drawable="@color/negro"
+                app:ci_drawable_unselected="@color/gris"
+                android:layout_below="@+id/slider"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:id="@+id/tvprecio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="precio"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/ivaincluido"
+                android:id="@+id/tvivaincluido"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tvprecio"
+                android:layout_toEndOf="@+id/tvprecio"
+                android:layout_marginLeft="3dp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/cantidad"
+            android:id="@+id/tv_cantidad"
+            android:layout_below="@+id/spinner_tamaño"
+            android:layout_alignLeft="@+id/tveligetamaño"
+            android:layout_alignStart="@+id/tveligetamaño"
+            android:layout_marginLeft="20dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <EditText
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/etcantidad"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:id="@+id/btnmas" />
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:id="@+id/btnmenos" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnanadircarrito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/boton_redondeado"
+            android:text="@string/anadiralcarrito"
+            android:textColor="#ffffff"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/enviogratis"
+            android:id="@+id/tvenviogratis"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/border"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/descripcion"
+                android:id="@+id/tvtitulodescripcion"
+                android:layout_alignTop="@+id/tgdescripcion"
+                android:layout_toRightOf="@+id/tgdescripcion"
+                android:layout_toEndOf="@+id/tgdescripcion"
+                android:layout_margin="5dp" />
+            <ToggleButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="New ToggleButton"
+                android:id="@+id/tgdescripcion"
+                android:background="@drawable/boton_redondeado"
+                android:textColor="#ffffff"
+                android:textOff="+"
+                android:textOn="-"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:checked="false"
+                android:layout_marginBottom="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Texto de la descripcion"
+                android:id="@+id/tvdescripcion"
+                android:layout_below="@+id/tvtitulodescripcion"
+                android:layout_alignLeft="@+id/tgdescripcion"
+                android:layout_alignStart="@+id/tgdescripcion"
+                android:layout_marginTop="5dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignTop="@+id/toggleButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/border">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/envio"
+                android:id="@+id/tvtituloenvio"
+                android:layout_alignTop="@+id/tgenvio"
+                android:layout_toRightOf="@+id/tgenvio"
+                android:layout_toEndOf="@+id/tgenvio"
+                android:layout_margin="5dp" />
+            <ToggleButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="New ToggleButton"
+                android:id="@+id/tgenvio"
+                android:background="@drawable/boton_redondeado"
+                android:textColor="#ffffff"
+                android:textOff="+"
+                android:textOn="-"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:checked="false"
+                android:layout_marginBottom="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/gastosfijos"
+                android:id="@+id/tvenvio"
+                android:layout_below="@+id/tvtituloenvio"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/toggleButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/border"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/metodosdepago"
+                android:id="@+id/tvtitulometodosdepago"
+                android:layout_alignTop="@+id/tgmetodosdepago"
+                android:layout_toRightOf="@+id/tgmetodosdepago"
+                android:layout_toEndOf="@+id/tgmetodosdepago"
+                android:layout_margin="5dp" />
+            <ToggleButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="New ToggleButton"
+                android:id="@+id/tgmetodosdepago"
+                android:background="@drawable/boton_redondeado"
+                android:textColor="#ffffff"
+                android:textOff="+"
+                android:textOn="-"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:checked="false"
+                android:layout_marginBottom="5dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tgmetodosdepago"
+                android:layout_alignLeft="@+id/tgmetodosdepago"
+                android:layout_alignStart="@+id/tgmetodosdepago"
+                android:id="@+id/layoutformapago">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tarjeta"
+                    android:id="@+id/tvpagarcontarjeta"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/infotarjeta"
+                    android:id="@+id/tvinfotarjeta"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

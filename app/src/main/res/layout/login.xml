@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btniniciarsesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tvdireccion"
+            android:layout_alignLeft="@+id/etpass"
+            android:layout_alignRight="@+id/tvdireccion"
+            android:layout_alignStart="@+id/etpass"
+            android:layout_below="@+id/etpass"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boton_redondeado"
+            android:text="@string/iniciarsesion"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/tvyasoy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:text="@string/yasoy"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tvsiusted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tvyasoy"
+            android:layout_alignLeft="@+id/tvyasoy"
+            android:layout_alignRight="@+id/tvyasoy"
+            android:layout_alignStart="@+id/tvyasoy"
+            android:layout_below="@+id/tvyasoy"
+            android:layout_marginTop="15dp"
+            android:text="@string/siusted"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvdireccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etemail"
+            android:layout_alignStart="@+id/etemail"
+            android:layout_below="@+id/tvsiusted"
+            android:layout_marginTop="26dp"
+            android:text="@string/direccionemail"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tvsiusted"
+            android:layout_alignLeft="@+id/tvsiusted"
+            android:layout_alignRight="@+id/tvsiusted"
+            android:layout_alignStart="@+id/tvsiusted"
+            android:layout_below="@+id/tvdireccion"
+            android:layout_marginRight="20dp"
+            android:inputType="textEmailAddress"
+            android:hint="@string/hintemail"/>
+
+        <TextView
+            android:id="@+id/tvpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvdireccion"
+            android:layout_alignStart="@+id/tvdireccion"
+            android:layout_below="@+id/etemail"
+            android:text="@string/pass"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/etemail"
+            android:layout_alignLeft="@+id/etemail"
+            android:layout_alignRight="@+id/etemail"
+            android:layout_alignStart="@+id/etemail"
+            android:layout_below="@+id/tvpass"
+            android:ems="10"
+            android:hint="@string/hintpass"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:id="@+id/tvolpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btniniciarsesion"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/btniniciarsesion"
+            android:layout_toRightOf="@+id/btniniciarsesion"
+            android:text="@string/olvpass"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tvnosoy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btniniciarsesion"
+            android:layout_margin="10dp"
+            android:text="@string/nosoy"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tvsiustedno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvnosoy"
+            android:layout_alignStart="@+id/tvnosoy"
+            android:layout_below="@+id/tvnosoy"
+            android:text="@string/siustedno"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/btnregistro"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvsiustedno"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/boton_redondeado"
+            android:text="@string/registro"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+</ScrollView>

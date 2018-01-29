@@ -1,0 +1,275 @@
+<resources>
+    <string name="app_name">Faunanimal</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enviogratis">ENVIO GRATIS A PARTIR DE 39 €</string>
+    <string name="yasoy">Ya soy cliente de Faunanimal</string>
+    <string name="siusted">Si usted tiene una cuenta de Faunanumal, por favor acceda.</string>
+    <string name="direccionemail">Dirección de email:</string>
+    <string name="pass">Contraseña:</string>
+    <string name="hintemail">Email</string>
+    <string name="hintpass">Contraseña</string>
+    <string name="iniciarsesion">Iniciar sesión</string>
+    <string name="olvpass">¿Olvidaste la contraseña?</string>
+    <string name="nosoy">No soy cliente de Faunanimal</string>
+    <string name="siustedno">Si usted no tiene una cuenta de Faunanimal, por favor registrese.</string>
+    <string name="registro">Registrarse</string>
+    <string name="search">Busqueda</string>
+    <string name="cart">Carrito de compras</string>
+    <string name="fav">Favoritos</string>
+    <string name="chat">Chat</string>
+    <string name="peces">Peces</string>
+    <string name="reptiles">Reptiles</string>
+    <string name="pajaros">Pajaros</string>
+    <string name="roedores">Roedores</string>
+    <string name="gatos">Gatos</string>
+    <string name="perros">Perros</string>
+    <string name="registrate">Regístrate</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="cuentausuario">Cuenta Usuario</string>
+    <string name="finalizarcompra">Finalizar Compra</string>
+    <string name="nombre">Nombre:</string>
+    <string name="provincia">Provincia:</string>
+    <string name="ciudad">Ciudad:</string>
+
+    <string name="apellidos">Apellidos:</string>
+    <string name="acepto">Acepto los Términos y condiciones y la politica de privacidad de Faunanimal</string>
+    <string name="megustaria">Me gustaría recibir descuentos exclusivos y las ultimas novedades por email.</string>
+    <string name="info">¿Tienes una pregunta acerca de tu pedido? Télefono gratuito de Atencion al Cliente : 609 65 60 18</string>
+    <string name="borrarresultado">Borrar Resultados</string>
+    <string name="direccion">Dirección:</string>
+    <string name="direccionsinpuntos">Dirección</string>
+    <string name="enviopago">Envio - Pago</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="direcciondefacturacion">Dirección de Facturación</string>
+    <string name="telefono">Teléfono:</string>
+    <string name="codigopostal">Codigo Postal:</string>
+    <string name="siguiente">SIGUIENTE</string>
+    <string name="metododeenvio">Método de envío</string>
+    <string name="metododepago">Método de pago</string>
+    <string name="envioen">Envio en 24/72 (horas)</string>
+    <string name="solotefaltan">Sólo te faltan 34,01 € para tener envio gratis</string>
+    <string name="tarjeta">Pagar con Tarjeta</string>
+    <string name="paypal">Pagar con Paypal</string>
+    <string name="transbancaria">Transferencia Bancaria</string>
+    <string name="revisarpedido">Revisar Pedido</string>
+    <string name="comentarios">Comentarios:</string>
+    <string name="heleido">He leido y estoy de acuerdo con los Términos y condiciones y la Politica de Privacidad</string>
+    <string name="nodatos">No se han encontrado datos, Revise conexion a internet y vuelva a cargar la ventana</string>
+    <string name="anadiralcarrito">AÑADIR AL CARRITO</string>
+    <string name="eligetamano">Elige tamaño:</string>
+    <string name="ivaincluido">IVA incluido</string>
+    <string name="cantidad">Cantidad:</string>
+    <string name="descripcion">Descripción de producto</string>
+    <string name="medidas">Medidas</string>
+    <string name="envio">Envio</string>
+    <string name="metodosdepago">Métodos de pago</string>
+    <string name="valoraciones">Valoraciones</string>
+    <string name="envio399">Envio 3,99 €</string>
+    <string name="gastosfijos">Gastos de envío fijos de 3,99€</string>
+    <string name="infotarjeta">Paga con tu tarjeta en la pasarela del banco mediante una transacción 100% segura</string>
+    <string name="infopaypal">Será redirigido a la página web de PayPal cuando finalize el pedido.</string>
+    <string name="infotransferenciabancaria">Banco: Sabadell IBAN: ES96 0081 1011 9800 0109 5517 Beneficiario: PANDA VENTURES S.L. SWIFT: BSABESBB Concepto: Indica el número de pedido. Puedes agilizar la gestión de tu pedido, enviando el justificante a info@faunanimal.com</string>
+    <string name="precio">Precio:</string>
+    <string name="min">mín.</string>
+    <string name="max">máx.</string>
+    <string name="ofertas">Ofertas:</string>
+    <string name="envio_gratis">Envio Gratis:</string>
+    <string name="aplicar">Aplicar</string>
+    <string name="restablecer">Restablecer</string>
+    <string name="tvverterminosycondiciones"><u>Ver Terminos Y Condiciones</u></string>
+    <string name="tvverterminosycondicionesypoliticadeprivacidad"><u>Ver Terminos Y Condiciones y Politica de privacidad</u></string>
+    <string name="terminosycondiciones"><b>POLITICA DE PRIVACIDAD</b> Esta página Web, es propiedad de Panda Ventures, S.L., en adelante "FaunAnimal".
+Su contenido está protegido por la legislación vigente de propiedad intelectual, quedando expresamente prohibida su reproducción (total o parcial), copia o almacenamiento sin autorización expresa y por escrito de FaunAnimal.
+FaunAnimal no asume responsabilidad alguna derivada de la información de esta Web y se reserva el derecho exclusivo de modificar y/o suprimir a su arbitrio y sin previo aviso, la información contenida en ella.
+FaunAnimal, informa a sus usuarios que los datos personales que nos proporcionan formarán parte de un fichero informatizado que ha sido creado y mantenido bajo la responsabilidad de FaunAnimal domiciliado en Av. Juan Gil Albert Nº 1, 03804 Alcoy (Alicante).
+La única finalidad de este fichero es la tramitación de la información que solicite el usuario.
+Para dar cumplimiento con lo establecido en la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal le informamos que sus datos personales quedarán incorporados y serán tratados única y exclusivamente por FaunAnimal, con el fin de poderle prestar y ofrecer nuestros servicios.
+El usuario puede ejercer sus derechos de acceso, rectificación, oposición y cancelación al tratamiento de sus datos personales, en los términos y condiciones previstos en la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal. Si el usuario decide darse de baja, sus datos serán totalmente cancelados. Estos derechos pueden hacerse efectivos, de forma ágil y gratuita, mediante el envío de correo electrónico a la dirección info@faunanimal.com. Asimismo, en caso de problemas para la realización efectiva on-line, así como para cualquier tipo de duda respecto a nuestra política de privacidad de datos, el usuario puede ponerse en contacto con nosotros mediante el envío de correo electrónico a la dirección info@faunanimal.com .
+
+Panda Ventures, S.L.: NIF/CIF B-54850086
+Inscrita en el Registro: Hoja A- 144752 Tomo 3854 Folio 71</string>
+
+
+
+    <string name="terminosycondicionespoliticadeprivacidad">
+<b>POLITICA DE PRIVACIDAD</b> Esta página Web, es propiedad de Panda Ventures, S.L., en adelante "FaunAnimal".
+Su contenido está protegido por la legislación vigente de propiedad intelectual, quedando expresamente prohibida su reproducción (total o parcial), copia o almacenamiento sin autorización expresa y por escrito de FaunAnimal.
+FaunAnimal no asume responsabilidad alguna derivada de la información de esta Web y se reserva el derecho exclusivo de modificar y/o suprimir a su arbitrio y sin previo aviso, la información contenida en ella.
+FaunAnimal, informa a sus usuarios que los datos personales que nos proporcionan formarán parte de un fichero informatizado que ha sido creado y mantenido bajo la responsabilidad de FaunAnimal domiciliado en Av. Juan Gil Albert Nº 1, 03804 Alcoy (Alicante).
+La única finalidad de este fichero es la tramitación de la información que solicite el usuario.
+Para dar cumplimiento con lo establecido en la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal le informamos que sus datos personales quedarán incorporados y serán tratados única y exclusivamente por FaunAnimal, con el fin de poderle prestar y ofrecer nuestros servicios.
+El usuario puede ejercer sus derechos de acceso, rectificación, oposición y cancelación al tratamiento de sus datos personales, en los términos y condiciones previstos en la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal. Si el usuario decide darse de baja, sus datos serán totalmente cancelados. Estos derechos pueden hacerse efectivos, de forma ágil y gratuita, mediante el envío de correo electrónico a la dirección info@faunanimal.com. Asimismo, en caso de problemas para la realización efectiva on-line, así como para cualquier tipo de duda respecto a nuestra política de privacidad de datos, el usuario puede ponerse en contacto con nosotros mediante el envío de correo electrónico a la dirección info@faunanimal.com .
+
+Panda Ventures, S.L.: NIF/CIF B-54850086
+Inscrita en el Registro: Hoja A- 144752 Tomo 3854 Folio 71
+
+
+
+<b>CONDICIONES GENERALES DE USO</b>
+Consideraciones Previas
+Las presentes condiciones legales regulan el uso legal permitido de esta página web, cuyo responsable legal es Panda Ventures S.L. (en adelante, "FaunAnimal"). Estas condiciones generales regulan el acceso y utilización que el titular de la web pone gratuitamente a disposición de los usuarios de Internet. El acceso a la misma implica su aceptación sin reservas. El mero uso de la web, así como solicitar información o emitir un pedido, supone la aceptación plena de las presentes condiciones.
+
+Uso de la Página Web
+El Usuario se obliga a usar la web, los Servicios y los Contenidos de forma diligente, correcta y lícita y, en particular, se compromete a abstenerse de: suprimir, eludir o manipular el "copyright" y demás datos identificativos de los derechos de sus titulares incorporados a los Contenidos.
+
+Propiedad intelectual e industrial
+Los textos, imágenes, logos, signos distintivos, sonidos, animaciones, vídeos, código fuente y resto de contenidos incluidos en esta web son propiedad de FaunAnimal, o dispone en su caso, del derecho de uso y explotación de los mismos, y en tal sentido se erigen como obras protegidas por la legislación de propiedad intelectual e industrial vigentes. Cualquier transmisión, distribución, reproducción o almacenamiento, total o parcial, de los contenidos almacenados en esta web, queda expresamente prohibido salvo previo y expreso consentimiento del titular. No obstante, los usuarios podrán llevar a cabo la reproducción o almacenamiento de los contenidos de la web para su exclusivo uso personal, quedando expresa y terminantemente prohibida la reproducción de elementos o contenidos de esta web, realizados con ánimo de lucro o fines comerciales.
+
+Responsabilidad por enlaces
+La empresa responsable de la página web, declina cualquier responsabilidad por los servicios y/o información que se preste en otras páginas enlazadas con esta Web. En el caso de vínculos a sitios de terceros, el usuario pasará a estar regido por los Términos de Uso y Política de Privacidad del nuevo sitio web. FaunAnimal no puede revisar de forma permanente y continuada la legalidad de los contenidos de los sitios web enlazados, por lo que en el caso de que el usuario detecte contenidos ilícitos en dichos sitios web, le rogamos nos lo haga saber para que procedamos a la retirada inmediata del enlace y, en su caso, denunciemos los contenidos ilícitos.
+
+Exclusión de responsabilidad.
+FaunAnimal no se hace responsable de las pérdidas o perjuicios que pueda ocasionar al Usuario o Visitante una eventual caída del servicio por causas ajenas a FaunAnimal, así como tampoco será responsable de problemas surgidos por la falta de interactividad entre los usuarios o visitantes en estas situaciones. FaunAnimal se exonera de toda responsabilidad derivada de: Las interrupciones en el funcionamiento normal del sitio web derivadas de causas de fuerza mayor, así como causas no imputables a FaunAnimal y que provoquen que el servicio web no se encuentre operativo total o parcialmente. El uso no autorizado por terceros del nombre de Usuario y clave de acceso de nuestros clientes por falta de diligencia en la custodia por parte de los mismos. El uso de datos incorrectos o falsos por parte de nuestros clientes, incluyéndose los errores que nuestros clientes hayan podido cometer a la hora de darse de alta y los derivados de la no actualización de los datos por parte del cliente.
+
+Datos Recogidos.
+Se puede visitar este sitio web sin necesidad de facilitar ningún dato de carácter personal, no obstante existen diversas opciones de registro, consultas o formularios de pedido donde se recogen datos de carácter personal. FaunAnimal únicamente recoge los datos personales que resultan necesarios para gestionar los pedidos, atender sus dudas o consultas o publicar los anuncios que nos envíe. El titular de este sitio web web y por tanto de los ficheros con datos de carácter personal en los que se incluirán los datos recogidos y tratados desde esta página web es la entidad FaunAnimal Panda Ventures S.L., con domicilio de contacto sito en Avda. Juan Gil Albert Nº 1, 03804. Alcoy (Alicante).
+
+Utilización y finalidad de los datos recogidos.
+En faunanimal.com se recogen datos de carácter personal con las siguientes finalidades: Registro y gestión Usuarios: Toda la información que nos proporcione en el formulario de registro, se utiliza para la gestión de los usuarios de la página web. FaunAnimal no admitirá intentos de registros falsos o que suplanten la identidad de personas o empresas, el suministro de información falsa en el formulario de registro implicará la baja automática del usuario. FaunAnimal se reserva el derecho a verificar la información facilitada por el usuario mediante comprobación telefónica. Gestión de Pedidos: Cuando adquiere un producto en nuestra tienda online, los datos que nos facilite serán utilizados para tramitar, enviar y facturar los productos adquiridos. Para poder realizar pedidos en la tienda on line, cada cliente proporcionará, de forma voluntaria y bajo su responsabilidad, sus datos de carácter personal, que deberán ser veraces y exactos. El usuario que formaliza el proceso de compra on line, declara ser el titular de la información facilitada, o en su defecto, contar con autorización e la persona en cuyo nombre realice la gestión. El usuario sólo podrá contratar y realizar pedidos si es mayor de edad. En caso contrario, la responsabilidad por la adquisición de productos por parte de menores de edad correrá a cargo de los padres o tutores legales del menor. Envío de información: Toda La información introducida en los formularios de registro o pedidos se empleará, en los casos en los que nos haya autorizado, para enviarle información de su interés sobre las novedades de la página web, noticias de interés sobre las mascotas, así como promociones y ofertas de nuestros productos y servicios. Esta información se envía por vía postal y/o electrónica. Los usuarios que no desean recibir este tipo de información deberán comunicárnoslo a la dirección de correo electrónico a info@faunanimal.com. El usuario se compromete a utilizar este servicio de conformidad con la ley, las presentes condiciones, así como con la moral y buenas costumbres generalmente aceptadas y el orden público. En particular, y a título meramente indicativo y no exhaustivo, el usuario se compromete a no publicar contenidos que:
+induzcan, inciten o promuevan actuaciones delictivas, denigratorias, difamatorias, violentas o, en general, contrarias a la ley, a la moral y buenas costumbres generalmente aceptadas o al orden público
+incorporen mensajes delictivos, violentos, pornográficos, degradantes o, en general, contrarios a la ley, a la moral y buenas costumbres generalmente aceptadas o al orden público; c. induzcan o puedan inducir a un estado inaceptable de ansiedad o temor
+sean falsos, ambiguos, inexactos, exagerados o extemporáneos, de forma que puedan inducir a error sobre su objeto o sobre las intenciones o propósitos del comunicante
+se encuentren protegidos por cualesquiera derechos de propiedad intelectual o industrial pertenecientes a terceros, sin que el usuario haya obtenido previamente de sus titulares la autorización necesaria para llevar a cabo el uso que efectúa o pretende efectuar
+violen los secretos empresariales de terceros
+sean contrarios al derecho al honor, a la intimidad personal y familiar o a la propia imagen de las personas
+infrinjan la normativa sobre secreto de las comunicaciones
+constituyan publicidad ilícita, engañosa o desleal y, en general, que constituyan competencia desleal
+Los comentarios volcados por los usuarios podrán publicarse de manera automática. FaunAnimal velará por el uso correcto del presente sitio web, y eliminará cualquier contenido contrario a la normativa en cuanto tenga conocimiento efectivo de usos ilícitos. No obstante, el usuario será el responsable de los contenidos que incluya.
+    </string>
+
+
+    <string name="envioprecio">Envio 3.99 €</string>
+    <string name="nohayproductosaun">No hay productos aún</string>
+    <string name="borrarproducto">Si quiere borrar un producto pulse sobre él.</string>
+    <string name="numero">Número de Tarjeta</string>
+    <string name="mes">Mes</string>
+    <string name="anyo">Año</string>
+    <string name="codigodeverificacion">Código de verificación</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="datosdetarjeta">Datos de la Tarjeta</string>
+
+
+    <string-array name="num_meses">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string name="cantidad_digitos_16">Tiene que introducir 16 digitos en el campo "Número de Tarjeta"</string>
+    <string name="cantidad_digitos_4">Tiene que introducir 4 digitos en el campo "Año"</string>
+    <string name="cantidad_digitos_3">Tiene que introducir 3 digitos en el campo "Código de verificación"</string>
+    <string name="numero_tarjeta_novalido">El número de la tarjeta que ha introducido no es válido</string>
+    <string name="fecha_novalida"> La fecha de caducidad que ha introducido no es válida</string>
+    <string name="cvc_novalido"> El Código de verificación que ha introducido no es válido</string>
+    <string name="ciudad_novalida"> El nombre de ciudad no es válido</string>
+
+
+    <string name="nombre_novalido"> Tiene que introducir un Nombre</string>
+    <string name="apellido_novalido">Tiene que introducir sus Apellidos</string>
+    <string name="email_nohay">Tiene que introducir una dirección de Email</string>
+
+    <string name="email_novalido"> La dirección de email no es válida</string>
+    <string name="telefono_novalido"> Tiene que introducir un Teléfono válido</string>
+    <string name="direccion_novalido"> Tiene que introducir una Direccion válida</string>
+    <string name="cp_novalido"> Tiene que introducir un Codigo Postal</string>
+    <string name="tienequeaceptar"> Tiene que Aceptar tanto Los Terminos y Condiciones como la Politica de privacidad</string>
+
+
+    <string name="telefono_info"> Teléfono / Whatsapp :</string>
+    <string name="numero_info"> 609 65 60 18</string>
+    <string name="email_info"> <u>info@faunanimal@.com</u></string>
+    <string name="atencion_info"> Atención al cliente :</string>
+    <string name="blog_info"> Blog :</string>
+    <string name="horario_info"> Lunes-Viernes  \n de 9:00h - 14:00h y de 15:00h - 18:30h</string>
+
+    <string name="direccion_blog_info"><u>faunanimal.com/blog/</u></string>
+
+    <string name="siguenos_info">Síguenos</string>
+    <string name="info_titulo">Información</string>
+
+
+    <string name="cargando">Cargando...</string>
+    <string name="direccion_info_ofi">Avenida Juan Gil Albert 1  \n Planta 6 Oficina 5  \n 03804 Alcoy, Alicante</string>
+    <string name="tarjeta_no_valida">Tarjeta no valida ,revise los datos</string>
+    <string name="filtronodatos">No se han encontrado productos.</string>
+    <string name="nohayconexion">No se ha podido establecer la conexión con el servidor</string>
+    <string name="pais">Pais:</string>
+    <string name="nif">Número NIF/CIF</string>
+    <string name="nifnovalido">Tiene que introducir un NIF/CIF válido</string>
+    <string name="contraseñanovalida">Contraseña no valida</string>
+    <string name="loginerror">Contraseña no valida o usuario no valido</string>
+    <string name="logincorrecto">Login Correcto</string>
+    <string name="yalogin">Ya estas logueado</string>
+
+
+
+
+    <string-array name="array_provincias">
+        <item>Álava</item>
+        <item>Albacete</item>
+        <item>Alicante</item>
+        <item>Almería</item>
+        <item>Asturias</item>
+        <item>Ávila</item>
+        <item>Badajoz</item>
+        <item>Barcelona</item>
+        <item>Burgos</item>
+        <item>Cáceres</item>
+        <item>Cádiz</item>
+        <item>Cantabria</item>
+        <item>Castellón</item>
+        <item>Ciudad Real</item>
+        <item>Córdoba</item>
+        <item>La Coruña</item>
+        <item>Cuenca</item>
+        <item>Gerona</item>
+        <item>Granada</item>
+        <item>Guadalajara</item>
+        <item>Guipúzcoa</item>
+        <item>Huelva</item>
+        <item>Huesca</item>
+        <item>Islas Baleares</item>
+        <item>Jaén</item>
+        <item>León</item>
+        <item>Lérida</item>
+        <item>Lugo</item>
+        <item>Madrid</item>
+        <item>Málaga</item>
+        <item>Murcia</item>
+        <item>Navarra</item>
+        <item>Orense</item>
+        <item>Palencia</item>
+        <item>Las Palmas</item>
+        <item>Pontevedra</item>
+        <item>La Rioja</item>
+        <item>Salamanca</item>
+        <item>Segovia</item>
+        <item>Sevilla</item>
+        <item>Soria</item>
+        <item>Tarragona</item>
+        <item>Santa Cruz de Tenerife</item>
+        <item>Teruel</item>
+        <item>Toledo</item>
+        <item>Valencia</item>
+        <item>Valladolid</item>
+        <item>Vizcaya</item>
+        <item>Zamora</item>
+        <item>Zaragoza</item>
+    </string-array>
+
+
+    <string-array name="array_pais">
+    <item>España</item>
+    </string-array>
+
+
+</resources>

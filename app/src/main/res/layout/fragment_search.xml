@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/borrarresultado"
+        android:id="@+id/btnborrarresultado"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/boton_redondeado"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/relativeLayout2">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_search_producto"
+            android:layout_alignBottom="@+id/ImageButton_search_lupa"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/ImageButton_search_lupa"
+            android:layout_toStartOf="@+id/ImageButton_search_lupa" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/boton_redondeado"
+            android:id="@+id/ImageButton_search_lupa"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar_search"
+        android:layout_gravity="center_horizontal"
+        android:indeterminate="false"
+        android:layout_centerInParent="true" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridView_modelo"
+        android:layout_gravity="center_horizontal"
+        android:numColumns="2"
+        android:verticalSpacing="29dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_above="@+id/btnborrarresultado"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+</RelativeLayout>

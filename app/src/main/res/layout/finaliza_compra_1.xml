@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.03"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvdireccion_fac1_progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/enviopago"
+                android:layout_toStartOf="@+id/enviopago"
+                android:text="@string/direccionsinpuntos"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/enviopago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/enviopago"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/tvconfirmar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/enviopago"
+                android:layout_toRightOf="@+id/enviopago"
+                android:text="@string/confirmar"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/CustomProgressBar"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+
+        <TextView
+            android:id="@+id/tvtitulo_direccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/progressBar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boton_redondeado"
+            android:drawableLeft="@drawable/numero1"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="30dp"
+            android:text="@string/direcciondefacturacion"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvnombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvtitulo_direccion"
+            android:layout_marginLeft="30dp"
+            android:text="@string/nombre"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/etnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvnombre"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:maxLines="1"
+            android:inputType="textAutoCorrect"
+            />
+
+        <TextView
+            android:id="@+id/tvapellidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/etnombre"
+            android:layout_marginLeft="30dp"
+            android:text="@string/apellidos"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/etapellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvapellidos"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:maxLines="1"
+            android:inputType="textAutoCorrect"
+            />
+
+        <TextView
+            android:id="@+id/tvdirecciondeemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/etapellidos"
+            android:layout_marginLeft="30dp"
+            android:text="@string/direccionemail"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/etemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvdirecciondeemail"
+            android:layout_alignStart="@+id/tvdirecciondeemail"
+            android:layout_below="@+id/tvdirecciondeemail"
+            android:layout_marginRight="30dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:id="@+id/tvtelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etemail"
+            android:layout_alignStart="@+id/etemail"
+            android:layout_below="@+id/etemail"
+            android:text="@string/telefono"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/ettelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/etemail"
+            android:layout_alignLeft="@+id/tvtelefono"
+            android:layout_alignRight="@+id/etemail"
+            android:layout_alignStart="@+id/tvtelefono"
+            android:layout_below="@+id/tvtelefono"
+            android:ems="10"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:maxWidth="15dp"
+            android:maxLength="20" />
+
+        <TextView
+            android:id="@+id/tvdireccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ettelefono"
+            android:layout_alignStart="@+id/ettelefono"
+            android:layout_below="@+id/ettelefono"
+            android:text="@string/direccion"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/etdireccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/ettelefono"
+            android:layout_alignLeft="@+id/tvdireccion"
+            android:layout_alignRight="@+id/ettelefono"
+            android:layout_alignStart="@+id/tvdireccion"
+            android:layout_below="@+id/tvdireccion"
+            android:ems="10"
+            android:inputType="text"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:id="@+id/tvcodigopostal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etdireccion"
+            android:layout_alignStart="@+id/etdireccion"
+            android:layout_below="@+id/etdireccion"
+            android:text="@string/codigopostal"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/etcodigopostal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/etdireccion"
+            android:layout_alignLeft="@+id/tvcodigopostal"
+            android:layout_alignRight="@+id/etdireccion"
+            android:layout_alignStart="@+id/tvcodigopostal"
+            android:layout_below="@+id/tvcodigopostal"
+            android:ems="10"
+            android:inputType="phone"
+            android:maxLength="5" />
+
+        <Button
+            android:id="@+id/btnsiguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/boton_redondeado"
+            android:drawableRight="@drawable/triangulo"
+            android:paddingRight="30dp"
+            android:text="@string/siguiente"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_below="@+id/etnif"
+            android:layout_alignEnd="@+id/sppais"
+            android:layout_alignStart="@+id/tvnif"
+            android:layout_marginBottom="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/provincia"
+            android:id="@+id/tvprovincia"
+            android:layout_below="@+id/etcodigopostal"
+            android:layout_alignStart="@+id/etcodigopostal" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spprovincias"
+            android:layout_below="@+id/tvprovincia"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:entries="@array/array_provincias"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/ciudad"
+            android:id="@+id/tvciudad"
+            android:layout_below="@+id/spprovincias"
+            android:layout_alignStart="@+id/tvprovincia" />
+
+        <EditText
+            android:id="@+id/etciudad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvciudad"
+            android:layout_alignStart="@+id/etcodigopostal"
+            android:layout_alignEnd="@+id/etcodigopostal"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/tvpais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pais"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@+id/etciudad"
+            android:layout_alignStart="@+id/etciudad" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sppais"
+            android:entries="@array/array_pais"
+            android:layout_below="@+id/tvpais"
+            android:layout_alignStart="@+id/tvpais"
+            android:layout_alignEnd="@+id/etciudad" />
+
+        <TextView
+            android:id="@+id/tvnif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nif"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@+id/sppais"
+            android:layout_alignStart="@+id/sppais" />
+
+        <EditText
+            android:id="@+id/etnif"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvnif"
+            android:layout_alignStart="@+id/tvnif"
+            android:layout_alignEnd="@+id/btnsiguiente"
+            android:layout_marginBottom="20dp" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_fragment_compra" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/tv_fragment_titulo"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/img_fragment_compra"
+        android:layout_toEndOf="@+id/img_fragment_compra" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_fragment_titulo"
+        android:layout_toRightOf="@+id/img_fragment_compra"
+        android:layout_toEndOf="@+id/img_fragment_compra"
+        android:background="#f4f4f4">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/tv_fragment_cantidad"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/img_fragment_compra"
+            android:layout_toEndOf="@+id/img_fragment_compra" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/tv_fragment_precio"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/img_fragment_compra"
+            android:layout_toEndOf="@+id/img_fragment_compra" />
+    </LinearLayout>
+
+</RelativeLayout>

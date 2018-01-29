@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/nombre"
+        android:id="@+id/tvnombre"
+        android:layout_alignLeft="@+id/etnombre"
+        android:layout_alignStart="@+id/etnombre"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etnombre"
+        android:layout_below="@+id/tvnombre"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        android:inputType="textAutoCorrect"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/apellidos"
+        android:id="@+id/tvapellidos"
+        android:layout_below="@+id/etnombre"
+        android:layout_alignLeft="@+id/etapellidos"
+        android:layout_alignStart="@+id/etapellidos" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etapellidos"
+        android:layout_below="@+id/tvapellidos"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        android:inputType="textAutoCorrect"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/direccionemail"
+        android:id="@+id/tvdirecciondeemail"
+        android:layout_below="@+id/etapellidos"
+        android:layout_alignLeft="@+id/tvapellidos"
+        android:layout_alignStart="@+id/tvapellidos" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/etemail"
+        android:layout_below="@+id/tvdirecciondeemail"
+        android:layout_alignLeft="@+id/etapellidos"
+        android:layout_alignStart="@+id/etapellidos"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/pass"
+        android:id="@+id/tvpass"
+        android:layout_below="@+id/etemail"
+        android:layout_alignLeft="@+id/etemail"
+        android:layout_alignStart="@+id/etemail" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etpassword"
+        android:layout_below="@+id/tvpass"
+        android:layout_alignLeft="@+id/etemail"
+        android:layout_alignStart="@+id/etemail"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        />
+
+    <Button
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:text="@string/registrarse"
+        android:id="@+id/btnregistrarse"
+        android:background="@drawable/boton_redondeado"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/chmegustaria"
+        android:layout_alignLeft="@+id/tvinfo"
+        android:layout_alignStart="@+id/tvinfo"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/info"
+        android:id="@+id/tvinfo"
+        android:enabled="true"
+        android:layout_below="@+id/tbinfo"
+        android:layout_alignLeft="@+id/etpassword"
+        android:layout_alignStart="@+id/etpassword" />
+
+    <ToggleButton
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/tbinfo"
+        android:checked="false"
+        android:background="@drawable/info"
+        android:textOff=" "
+        android:textOn=" "
+        android:layout_below="@+id/btnregistrarse"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/acepto"
+        android:id="@+id/chacepto"
+        android:checked="false"
+        android:layout_below="@+id/tvverterminosycondiciones"
+        android:layout_alignLeft="@+id/etpassword"
+        android:layout_alignStart="@+id/etpassword"
+        android:layout_marginRight="10dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/megustaria"
+        android:id="@+id/chmegustaria"
+        android:checked="false"
+        android:layout_below="@+id/chacepto"
+        android:layout_alignLeft="@+id/chacepto"
+        android:layout_alignStart="@+id/chacepto"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/tvverterminosycondiciones"
+        android:id="@+id/tvverterminosycondiciones"
+        android:layout_below="@+id/etpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center" />
+
+
+</RelativeLayout>
+</ScrollView>
